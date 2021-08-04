@@ -1,12 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import {
-  increaseCounter,
-  decreaseCounter,
-} from "./redux/Counter/counter.actions"
+import { increaseCounter, decreaseCounter } from "./redux/counter/counterActions"
 import { connect } from "react-redux"
 
-function App() {
+function App(props) {
   return (
   <div className="App">
     <div>Count: {props.count}</div>
